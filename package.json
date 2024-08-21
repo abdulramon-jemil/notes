@@ -12,8 +12,7 @@
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
   "scripts": {
-    "build": "rm -rf dist/* && tsc -p tsconfig.cjs.json && tsc -p tsconfig.esm.json && bash ./fixup.sh",
-    "fixup": "bash ./fixup.sh",
+    "commit": "git add . && git commit --amend --no-edit",
     "format": "prettier --write .",
     "lint": "eslint --ext .js,.ts ./",
     "type-check": "tsc -p ./tsconfig.json --noEmit",
